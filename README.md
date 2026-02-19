@@ -67,7 +67,7 @@ Each detector inherits from `BaseDetector` and implements a single `detect(contr
 ### Installation
 
 ```bash
-git clone https://github.com/yourname/solscan-enterprise.git
+https://github.com/nafis21254/solscan-enterprise.git
 cd solscan-enterprise
 
 # Automated setup (creates venv, installs deps, configures solc)

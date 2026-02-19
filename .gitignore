@@ -1,0 +1,73 @@
+# ============================================================================
+# SolScan Enterprise .gitignore
+# Python + Solidity Security Tooling
+# ============================================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+*.whl
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Type Checking & Linting
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# ---------- Solidity / Slither ----------
+# Compiled artifacts
+artifacts/
+cache/
+crytic-export/
+crytic-compile/
+
+# solc binaries managed by solc-select
+.solc-select/
+
+# Foundry / Hardhat build dirs
+out/
+node_modules/
+typechain/
+typechain-types/
+
+# ---------- IDE ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ---------- Security Tool Outputs ----------
+*.sarif
+reports/
+scan-results/
+
+# ---------- Environment Secrets ----------
+.env
+.env.*
+!.env.example
+
+# ---------- OS ----------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
